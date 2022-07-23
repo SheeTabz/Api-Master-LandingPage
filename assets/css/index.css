@@ -8,3 +8,66 @@
     --neutral-4: hsl(260, 8%, 14%);
     --font-size:18px;
 }
+body{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    color: hsl(257, 7%, 63%);
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav>.left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    color: hsl(257, 27%, 26%);
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+}
+nav>.left>ul>li{
+   font-weight: 700;
+   display: inline-block;
+   margin-right: 20px;
+   transition: 0.2s ease;
+}
+nav>.left>ul>li:hover, nav>.log>p:hover{
+    border-bottom: 3px solid hsl(180, 66%, 49%);
+}
+nav>.log{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+nav>.log>p{
+    margin-right: 20px;
+
+}
+.log>button{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: hsl(180, 66%, 49%);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    transition: 0.2s ease;
+}
+.log>button:hover{
+    color: hsl(180, 66%, 49%);
+    border: 2px solid hsl(180, 66%, 49%);
+    background-color: transparent;
+}
+
