@@ -14,6 +14,8 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ==========NAVIGATION BAR======== */
 nav{
     color: hsl(257, 7%, 63%);
     height: 10vh;
@@ -70,4 +72,6 @@ nav>.log>p{
     border: 2px solid hsl(180, 66%, 49%);
     background-color: transparent;
 }
+
+/* ==========HERO SECTION========  */
 
