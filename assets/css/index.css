@@ -75,3 +75,43 @@ nav>.log>p{
 
 /* ==========HERO SECTION========  */
 
+.hero{
+    width: 80%;
+    margin: auto;
+
+}
+.heroSection{
+    display: flex;
+    margin-top: 30px;
+}
+.heroSection > *{
+    flex-basis: 50%;
+}
+
+
+.heroCont h2{
+    font-size:5rem;
+    font-weight: 700;
+    color: hsl(257, 27%, 26%)
+}
+.heroCont p{
+    color: hsl(257, 7%, 63%);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.heroCont button{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #fff;
+    background-color: hsl(180, 66%, 49%);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    transition: 0.2s ease;
+}
+.heroCont button:hover{
+    color: hsl(180, 66%, 49%);
+    border: 2px solid hsl(180, 66%, 49%);
+    background-color: transparent;
+}
