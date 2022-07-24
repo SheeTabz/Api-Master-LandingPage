@@ -19,7 +19,7 @@ body{
 nav{
     color: hsl(257, 7%, 63%);
     height: 10vh;
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -96,8 +96,8 @@ nav>.log>p{
 }
 .heroCont p{
     color: hsl(257, 7%, 63%);
-    font-weight: 500;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 .heroCont button{
     font-size: 1.4rem;
@@ -117,25 +117,22 @@ nav>.log>p{
 }
 
 /* ==========STATISTICS========  */
-.sec2{
-    
-}
+
 .float{
     
     background-color:hsl(257, 27%, 26%);
     background-image: url('..//images/bg-shorten-desktop.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60%;
+    width: 70%;
     margin: auto;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-   
-    
 }
+
 .floatCont input{
     width: 600px;
     padding: 20px;
@@ -155,4 +152,60 @@ nav>.log>p{
     border: none;
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+/* ========DETAILS SECTION======== */
+
+.sec3{
+    margin-top: 150px;
+    background-color: #EFF1F7;
+}
+.container{
+    height: 80vh;
+    margin: auto;
+}
+.container h2, h3{
+    color: hsl(257, 27%, 26%);
+}
+.container p{
+    color: hsl(257, 7%, 63%);
+    
+}
+.upperCont{
+    text-align: center;
+}
+.upperCont p{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.cards{
+    width: 70%;
+    margin: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+.cardCont{
+    background-color: #fff;
+    width: 350px;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 0px 0px 20px 15px;
+}
+.cardCont img{
+    background-color: hsl(257, 27%, 26%);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: -8%;
+}
+.card1{
+    align-self: flex-start;
+}
+.card2{
+    align-self: center;
+}
+.card3{
+    align-self: flex-end;
 }
