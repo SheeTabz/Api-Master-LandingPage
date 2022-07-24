@@ -248,3 +248,47 @@ button:hover{
 }
 
 /* ==========FOOTER SECTION===========  */
+footer{
+    background-color: hsl(260, 8%, 14%) ;
+    color: #fff;
+    height: 35vh;
+}
+.footer{
+    
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    height: 27vh;
+
+
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 30px;
+}
+.footer>ul>li:hover{
+    color: hsl(180, 66%, 49%);
+}
+.footLogo{
+    margin-top: 30px;
+    flex: 2;
+}
+.footLogo>.logo{
+    color: #fff;
+}
+
+.footer>ul>.heading{
+    font-weight: 900;
+}
+.socials{
+    cursor: pointer;
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    margin-top: 30px;
+}
