@@ -267,32 +267,38 @@ footer{
 
 
 }
-.footer ul{
+.lists{
+   
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+.lists ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
+    
     margin-top: 30px;
 }
-.footer>ul>li:hover{
+.lists>ul>li:hover{
     color: hsl(180, 66%, 49%);
 }
 .footLogo{
     margin-top: 30px;
-    flex: 2;
+    flex: 1;
 }
 .footLogo>.logo{
     color: #fff;
 }
 
-.footer>ul>.heading{
+.lists>ul>.heading{
     font-weight: 900;
 }
 .socials{
     cursor: pointer;
     display: flex;
-    flex: 2;
+    flex: 1;
     justify-content: space-around;
     margin-top: 30px;
 }
@@ -353,7 +359,22 @@ footer{
         margin-right: 20px;
         
     }
+}
     @media screen and (max-width:780px){
-        
+        .float{
+            width: 100%;
+        }
+        .heroCont h2{
+            font-size:3rem;  
     }
+    footer{
+        height: fit-content;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        height: fit-content;
+    }
+
 }
