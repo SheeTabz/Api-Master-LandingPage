@@ -87,7 +87,10 @@ nav>.log>p{
 .heroSection > *{
     flex-basis: 50%;
 }
-
+.heroImg img{
+    max-width: 730px;
+    min-width: 300px;
+}
 
 .heroCont h2{
     font-size:5rem;
@@ -186,6 +189,7 @@ nav>.log>p{
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+   
     
 }
 .cardCont{
@@ -291,4 +295,65 @@ footer{
     flex: 2;
     justify-content: space-around;
     margin-top: 30px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1600px){
+    nav,.hero,.cards,.footer{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1400px){
+    .cards{
+       width: 100%;
+    }
+}
+@media screen and (max-width:1170px){
+    .float{
+        width: 90%;
+    }
+    .cards{
+        justify-content: space-between;
+    }
+    .heroImg img{
+        width: 600px;
+    }
+}
+@media screen and (max-width:1110px){
+    nav,.hero,.cards,.footer{
+        width: 100%;
+    }
+    .heroSection{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cards{
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+        height: fit-content;
+      gap: 3rem;
+    }
+    .heroSection{
+        flex-wrap: wrap-reverse;
+    }
+    .container{
+        height: fit-content;
+        margin: auto;
+    }
+    .floatCont input{
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-right: 20px;
+        
+    }
+    @media screen and (max-width:780px){
+        
+    }
 }
