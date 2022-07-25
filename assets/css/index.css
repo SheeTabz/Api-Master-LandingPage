@@ -24,9 +24,16 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.navBar{
+    display: flex;
+    align-items: center;
+    color: hsl(257, 27%, 26%);
+    display: none;
+}
 nav>.left{
     display: flex;
     align-items: center;
+   
 }
 .logo{
     color: hsl(257, 27%, 26%);
@@ -361,6 +368,7 @@ footer{
     }
 }
     @media screen and (max-width:780px){
+
         .float{
             width: 100%;
         }
@@ -371,10 +379,102 @@ footer{
         height: fit-content;
     }
     .footer{
+    
         display: flex;
         flex-direction: column;
         justify-content: center; 
         height: fit-content;
     }
+    .footLogo{
+        margin-left: 35px;
+       
+    }
+    .floatCont input{
+        margin-right: 10px;   
+}
 
+}
+@media screen and (max-width:610px){
+    nav ul,nav .log{
+        display: none;
+        z-index: -1;
+    }
+    .heroImg img{
+        width: 400px;
+    } 
+    .footer{
+        text-align: center;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+    }
+    .navBar{
+        display: flex;
+    }
+    .heroCont button{
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+    .heroSection > *{
+        flex-basis: 100%;
+    }
+    .sec3{
+        margin-top: 80px;
+    }
+    .float{
+        /* margin: auto;
+        height: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; */
+    }
+    /* .floatCont input{
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-right: 20px;
+        
+    } */
+    .float{
+        
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .floatCont input{
+        width: 80%;
+        margin: 5px 10px 5px 10px;
+
+       
+        
+    }
+    .floatCont  button{
+        padding: 20px;
+        width: 90%;
+        
+    }
+    .sec4{
+        
+        height: 20vh;
+       
+    }
+    .boostCont h1{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .boostCont button{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+        background-color: hsl(180, 66%, 49%);
+        padding: 10px 15px;
+
+    }
 }
