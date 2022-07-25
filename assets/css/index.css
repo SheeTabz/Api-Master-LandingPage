@@ -402,6 +402,9 @@ footer{
     .heroImg img{
         width: 400px;
     } 
+    .heroCont h2{
+        font-size:2rem;  
+}
     .footer{
         text-align: center;
     }
@@ -422,23 +425,15 @@ footer{
     .sec3{
         margin-top: 80px;
     }
-    .float{
-        /* margin: auto;
-        height: 15vh;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column; */
-    }
-    /* .floatCont input{
-        width: 300px;
-        padding: 20px;
+    .cardCont{
+        text-align: center;
+        width: 350px;
+
+        height: 250px;
         border-radius: 10px;
-        border: none;
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-right: 20px;
-        
-    } */
+        padding: 0px 0px 20px 15px;
+    }
+    
     .float{
         
         height: 30vh;
@@ -461,7 +456,7 @@ footer{
         
     }
     .sec4{
-        
+        background-image: url('..//images/bg-boost-desktop.svg');
         height: 20vh;
        
     }
