@@ -7,9 +7,18 @@ form.addEventListener('submit', (e) => {
     method: 'GET',})
 .then(response => response.json())
 .then(data => {
-
+    const div = document.querySelector(".res")
+    const result= document.createElement('div')
+    result.className = 'result'
+    result.innerHTML =`<label for=""> <a href="${input}"  target="_blank">${input}</a></label>
+    <div class="resLeft">
+    <label for="" class="short">  <a href="${data.result.full_short_link}"  target="_blank">${data.result.full_short_link}</a> </label>
+    <button class="copy">Copy</button>
+  </div>`
+  div.appendChild(result)
+console.log(data.result)
 })
-
+form.reset()
    
 
 })
