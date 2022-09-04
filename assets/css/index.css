@@ -191,6 +191,9 @@ nav>.log>p{
    margin-left:10px ;
 
 }
+.short{
+    color: hsl(180, 66%, 49%);
+}
 .container{
     height: 70vh;
     margin: auto;
