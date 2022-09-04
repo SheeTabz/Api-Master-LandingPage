@@ -153,7 +153,7 @@ nav>.log>p{
     margin-right: 20px;
     
 }
-.floatCont  button{
+.copy,.floatCont  button{
     padding: 20px;
     width: 150px;
     background-color: hsl(180, 66%, 49%);
@@ -169,6 +169,27 @@ nav>.log>p{
 .sec3{
     margin-top: 150px;
     background-color: #EFF1F7;
+}
+.result{
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy {
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+.resLeft button{
+   margin-left:10px ;
+
 }
 .container{
     height: 70vh;
