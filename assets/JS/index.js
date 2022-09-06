@@ -13,21 +13,28 @@ form.addEventListener('submit', (e) => {
     result.innerHTML =`<label for=""> <a href="${input}"  target="_blank">${input}</a></label>
     <div class="resLeft">
     <label for="" class="short">  <a href="${data.result.full_short_link}"  target="_blank">${data.result.full_short_link}</a> </label>
-    <button class="copy">Copy</button>
+    <button class="copy" onClick="copy()">Copy</button>
   </div>`
   div.appendChild(result)
 console.log(data.result)
+
+
 })
+
 form.reset()
    
 
 })
 
-// console.log(data.result.full_short_link)
-{/* <div class="result">
-  <label for=""> <a href="">https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G</a>  </label>
-  <div class="resLeft">
-  <label for="" class="short">  <a href="">https://www.frontendmentor.io/challenges</a> </label>
-  <button class="copy">Copy</button>
-</div>
-</div> */}
+function copy() {
+  // alert("copied")
+   const text = document.querySelector(".short a").innerText
+   let inputElement = document.createElement("input")
+   inputElement.setAttribute("value", text)
+  document.body.appendChild(inputElement)
+  inputElement.select()
+   document.execCommand("copy")
+   inputElement.parentNode.removeChild(inputElement)
+   console.log(text)
+}
+
