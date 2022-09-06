@@ -26,14 +26,27 @@ form.reset()
 
 })
 
+// FUNCTION FOR COPYING TEXT TO CLIPBOARD
 function copy() {
-  // alert("copied")
+  // store the text to be copied in avariable
    const text = document.querySelector(".short a").innerText
+
+   //create an input field to store the text to be copied
    let inputElement = document.createElement("input")
+
+   //set its value to the text above
    inputElement.setAttribute("value", text)
+
+   // append the input to the DOM
   document.body.appendChild(inputElement)
+
+  // this method selects the value inside the input automatically
   inputElement.select()
+
+  // this command copies the input value to clipboard
    document.execCommand("copy")
+
+   // removes the newly formed input element from appearing to the DOM since t will affect the appearence
    inputElement.parentNode.removeChild(inputElement)
    console.log(text)
 }
