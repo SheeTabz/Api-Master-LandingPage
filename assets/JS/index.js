@@ -52,8 +52,8 @@ function copy() {
   const button = document.querySelector(".copy")
  
   button.innerText = "Copied!"
-  button.style.borderColor = "hsl(257, 27%, 26%)"
-  button.style.color = "hsl(257, 27%, 26%)"
+  button.style.backgroundColor = "hsl(257, 27%, 26%)"
+  button.style.color ="#fff"
 
 }
 
